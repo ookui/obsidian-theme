@@ -664,61 +664,150 @@ a:hover,
   color: var(--tag-color-hover);
 }
 
-.tag[href='#domain'],
-.tag[href='#concept'],
-.metadata-property-value a[href='#domain'],
-.metadata-property-value a[href='#concept'] {
-  border-color: rgba(var(--tag-neutral-rgb), 0.14);
-  background: rgba(var(--tag-neutral-rgb), 0.12);
-  color: var(--tag-neutral-color);
-}
-
-.tag[href='#org'],
-.tag[href='#books'],
-.metadata-property-value a[href='#org'],
-.metadata-property-value a[href='#books'] {
+.tag[href='#source'],
+.metadata-property-value a[href='#source'],
+.tag[href='#research'],
+.metadata-property-value a[href='#research'],
+.tag[href='#news'],
+.metadata-property-value a[href='#news'],
+.tag[href='#primer'],
+.metadata-property-value a[href='#primer'],
+.tag[href='#book'],
+.metadata-property-value a[href='#book'],
+.tag[href='#interview'],
+.metadata-property-value a[href='#interview'] {
   border-color: rgba(var(--tag-blue-rgb), 0.14);
   background: rgba(var(--tag-blue-rgb), 0.12);
   color: var(--tag-blue-color);
 }
 
-.tag[href='#person'],
-.tag[href='#todo'],
-.metadata-property-value a[href='#person'],
-.metadata-property-value a[href='#todo'] {
+.tag[href='#mechanism'],
+.metadata-property-value a[href='#mechanism'],
+.tag[href='#framework'],
+.metadata-property-value a[href='#framework'],
+.tag[href='#concept'],
+.metadata-property-value a[href='#concept'],
+.tag[href='#pattern'],
+.metadata-property-value a[href='#pattern'],
+.tag[href='#moat'],
+.metadata-property-value a[href='#moat'],
+.tag[href='#infrastructure'],
+.metadata-property-value a[href='#infrastructure'] {
   border-color: rgba(var(--tag-olive-rgb), 0.14);
   background: rgba(var(--tag-olive-rgb), 0.14);
   color: var(--tag-olive-color);
 }
 
-.tag[href='#event'],
-.tag[href='#insight'],
-.metadata-property-value a[href='#event'],
-.metadata-property-value a[href='#insight'] {
+.tag[href='#thesis'],
+.metadata-property-value a[href='#thesis'],
+.tag[href='#investment-view'],
+.metadata-property-value a[href='#investment-view'],
+.tag[href='#investment-philosophy'],
+.metadata-property-value a[href='#investment-philosophy'],
+.tag[href='#strategy'],
+.metadata-property-value a[href='#strategy'],
+.tag[href='#valuation'],
+.metadata-property-value a[href='#valuation'],
+.tag[href='#decision'],
+.metadata-property-value a[href='#decision'] {
   border-color: rgba(var(--tag-purple-rgb), 0.14);
   background: rgba(var(--tag-purple-rgb), 0.12);
   color: var(--tag-purple-color);
 }
 
-.tag[href='#investlog'],
-.metadata-property-value a[href='#investlog'] {
+.tag[href='#macro'],
+.metadata-property-value a[href='#macro'],
+.tag[href='#macro-history'],
+.metadata-property-value a[href='#macro-history'],
+.tag[href='#cycle'],
+.metadata-property-value a[href='#cycle'],
+.tag[href='#market-view'],
+.metadata-property-value a[href='#market-view'],
+.tag[href='#market-review'],
+.metadata-property-value a[href='#market-review'],
+.tag[href='#market-observation'],
+.metadata-property-value a[href='#market-observation'] {
   border-color: rgba(var(--tag-teal-rgb), 0.14);
   background: rgba(var(--tag-teal-rgb), 0.13);
   color: var(--tag-teal-color);
 }
 
+.tag[href='#industry'],
+.metadata-property-value a[href='#industry'],
+.tag[href='#company'],
+.metadata-property-value a[href='#company'],
+.tag[href='#entity'],
+.metadata-property-value a[href='#entity'],
+.tag[href='#a-share'],
+.metadata-property-value a[href='#a-share'],
+.tag[href='#hong-kong'],
+.metadata-property-value a[href='#hong-kong'],
+.tag[href='#semiconductor'],
+.metadata-property-value a[href='#semiconductor'],
+.tag[href='#software'],
+.metadata-property-value a[href='#software'],
+.tag[href='#ai'],
+.metadata-property-value a[href='#ai'],
+.tag[href='#cybersecurity'],
+.metadata-property-value a[href='#cybersecurity'],
+.tag[href='#data-center'],
+.metadata-property-value a[href='#data-center'] {
+  border-color: rgba(var(--tag-blue-rgb), 0.14);
+  background: rgba(var(--tag-blue-rgb), 0.12);
+  color: var(--tag-blue-color);
+}
+
+.tag[href='#log'],
+.metadata-property-value a[href='#log'],
+.tag[href='#investlog'],
+.metadata-property-value a[href='#investlog'],
+.tag[href='#reflection'],
+.metadata-property-value a[href='#reflection'],
+.tag[href='#mistakes'],
+.metadata-property-value a[href='#mistakes'],
+.tag[href='#failure-case'],
+.metadata-property-value a[href='#failure-case'] {
+  border-color: rgba(var(--tag-orange-rgb), 0.14);
+  background: rgba(var(--tag-orange-rgb), 0.14);
+  color: var(--tag-orange-color);
+}
+
+.tag[href='#venture'],
+.metadata-property-value a[href='#venture'],
 .tag[href='#project'],
-.metadata-property-value a[href='#project'] {
+.metadata-property-value a[href='#project'],
+.tag[href='#product-design'],
+.metadata-property-value a[href='#product-design'],
+.tag[href='#operations'],
+.metadata-property-value a[href='#operations'],
+.tag[href='#learning'],
+.metadata-property-value a[href='#learning'] {
   border-color: rgba(var(--tag-pink-rgb), 0.14);
   background: rgba(var(--tag-pink-rgb), 0.12);
   color: var(--tag-pink-color);
 }
 
-.tag[href='#mom'],
-.metadata-property-value a[href='#mom'] {
-  border-color: rgba(var(--tag-orange-rgb), 0.14);
-  background: rgba(var(--tag-orange-rgb), 0.14);
-  color: var(--tag-orange-color);
+.tag[href='#meta'],
+.metadata-property-value a[href='#meta'],
+.tag[href='#lakehouse'],
+.metadata-property-value a[href='#lakehouse'],
+.tag[href='#dashboard'],
+.metadata-property-value a[href='#dashboard'],
+.tag[href='#migration'],
+.metadata-property-value a[href='#migration'],
+.tag[href='#runtime'],
+.metadata-property-value a[href='#runtime'],
+.tag[href='#automation'],
+.metadata-property-value a[href='#automation'],
+.tag[href='#database'],
+.metadata-property-value a[href='#database'],
+.tag[href='#team'],
+.metadata-property-value a[href='#team'],
+.tag[href='#agents'],
+.metadata-property-value a[href='#agents'] {
+  border-color: rgba(var(--tag-neutral-rgb), 0.14);
+  background: rgba(var(--tag-neutral-rgb), 0.12);
+  color: var(--tag-neutral-color);
 }
 
 .callout {
@@ -1408,6 +1497,141 @@ input[type='checkbox'],
 .metadata-property-value a:nth-child(6n) {
   --meta-chip-rgb: var(--meta-chip-orange-rgb);
   --meta-chip-color: var(--meta-chip-orange-color);
+}
+
+.metadata-property[data-property-key='type'] .metadata-property-value,
+.metadata-property[data-property-key='source_type'] .metadata-property-value {
+  --meta-chip-rgb: var(--meta-chip-blue-rgb);
+  --meta-chip-color: var(--meta-chip-blue-color);
+  color: var(--meta-chip-color);
+}
+
+.metadata-property[data-property-key='note_type'] .metadata-property-value,
+.metadata-property[data-property-key='derives_from'] .metadata-property-value {
+  --meta-chip-rgb: var(--meta-chip-olive-rgb);
+  --meta-chip-color: var(--meta-chip-olive-color);
+  color: var(--meta-chip-color);
+}
+
+.metadata-property[data-property-key='status'] .metadata-property-value,
+.metadata-property[data-property-key='confidence'] .metadata-property-value,
+.metadata-property[data-property-key='direction'] .metadata-property-value,
+.metadata-property[data-property-key='related_thesis'] .metadata-property-value,
+.metadata-property[data-property-key='evidence_for'] .metadata-property-value {
+  --meta-chip-rgb: var(--meta-chip-purple-rgb);
+  --meta-chip-color: var(--meta-chip-purple-color);
+  color: var(--meta-chip-color);
+}
+
+.metadata-property[data-property-key='related'] .metadata-property-value,
+.metadata-property[data-property-key='contradicts'] .metadata-property-value,
+.metadata-property[data-property-key='supersedes'] .metadata-property-value {
+  --meta-chip-rgb: var(--meta-chip-teal-rgb);
+  --meta-chip-color: var(--meta-chip-teal-color);
+  color: var(--meta-chip-color);
+}
+
+.metadata-property[data-property-key='tags'] .metadata-property-value {
+  --meta-chip-rgb: var(--meta-chip-blue-rgb);
+  --meta-chip-color: var(--meta-chip-blue-color);
+}
+
+.metadata-property[data-property-key='ticker'] .metadata-property-value,
+.metadata-property[data-property-key='tickers'] .metadata-property-value,
+.metadata-property[data-property-key='rating'] .metadata-property-value,
+.metadata-property[data-property-key='action'] .metadata-property-value {
+  --meta-chip-rgb: var(--meta-chip-orange-rgb);
+  --meta-chip-color: var(--meta-chip-orange-color);
+  color: var(--meta-chip-color);
+}
+
+.metadata-property[data-property-key='archive_path'] .metadata-property-value,
+.metadata-property[data-property-key='url'] .metadata-property-value,
+.metadata-property[data-property-key='attachments'] .metadata-property-value {
+  --meta-chip-rgb: var(--meta-chip-pink-rgb);
+  --meta-chip-color: var(--meta-chip-pink-color);
+  color: var(--meta-chip-color);
+}
+
+.metadata-property[data-property-key='type'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='type'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='type'] .metadata-property-value a,
+.metadata-property[data-property-key='source_type'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='source_type'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='source_type'] .metadata-property-value a {
+  --meta-chip-rgb: var(--meta-chip-blue-rgb);
+  --meta-chip-color: var(--meta-chip-blue-color);
+}
+
+.metadata-property[data-property-key='note_type'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='note_type'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='note_type'] .metadata-property-value a,
+.metadata-property[data-property-key='derives_from'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='derives_from'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='derives_from'] .metadata-property-value a {
+  --meta-chip-rgb: var(--meta-chip-olive-rgb);
+  --meta-chip-color: var(--meta-chip-olive-color);
+}
+
+.metadata-property[data-property-key='status'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='status'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='status'] .metadata-property-value a,
+.metadata-property[data-property-key='confidence'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='confidence'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='confidence'] .metadata-property-value a,
+.metadata-property[data-property-key='direction'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='direction'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='direction'] .metadata-property-value a,
+.metadata-property[data-property-key='related_thesis'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='related_thesis'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='related_thesis'] .metadata-property-value a,
+.metadata-property[data-property-key='evidence_for'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='evidence_for'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='evidence_for'] .metadata-property-value a {
+  --meta-chip-rgb: var(--meta-chip-purple-rgb);
+  --meta-chip-color: var(--meta-chip-purple-color);
+}
+
+.metadata-property[data-property-key='related'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='related'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='related'] .metadata-property-value a,
+.metadata-property[data-property-key='contradicts'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='contradicts'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='contradicts'] .metadata-property-value a,
+.metadata-property[data-property-key='supersedes'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='supersedes'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='supersedes'] .metadata-property-value a {
+  --meta-chip-rgb: var(--meta-chip-teal-rgb);
+  --meta-chip-color: var(--meta-chip-teal-color);
+}
+
+.metadata-property[data-property-key='ticker'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='ticker'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='ticker'] .metadata-property-value a,
+.metadata-property[data-property-key='tickers'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='tickers'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='tickers'] .metadata-property-value a,
+.metadata-property[data-property-key='rating'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='rating'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='rating'] .metadata-property-value a,
+.metadata-property[data-property-key='action'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='action'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='action'] .metadata-property-value a {
+  --meta-chip-rgb: var(--meta-chip-orange-rgb);
+  --meta-chip-color: var(--meta-chip-orange-color);
+}
+
+.metadata-property[data-property-key='archive_path'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='archive_path'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='archive_path'] .metadata-property-value a,
+.metadata-property[data-property-key='url'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='url'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='url'] .metadata-property-value a,
+.metadata-property[data-property-key='attachments'] .metadata-property-value .multi-select-pill,
+.metadata-property[data-property-key='attachments'] .metadata-property-value .metadata-link,
+.metadata-property[data-property-key='attachments'] .metadata-property-value a {
+  --meta-chip-rgb: var(--meta-chip-pink-rgb);
+  --meta-chip-color: var(--meta-chip-pink-color);
 }
 
 .theme-dark .metadata-property-value .multi-select-pill,
