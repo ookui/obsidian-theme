@@ -751,9 +751,162 @@ input[type='checkbox'],
   border-radius: var(--tana-radius-sm);
 }
 
+.search-result-file-title {
+  position: relative;
+  margin: 8px 6px 4px;
+  padding: 8px 10px 8px 14px;
+  border: 1px solid rgba(var(--tana-accent-rgb), 0.1);
+  background: rgba(var(--tana-accent-rgb), 0.08);
+  color: var(--tana-text-strong);
+  font-weight: 650;
+}
+
+.search-result-file-title::before {
+  content: '';
+  position: absolute;
+  inset: 7px auto 7px 6px;
+  width: 3px;
+  border-radius: 999px;
+  background: var(--tana-accent);
+  opacity: 0.72;
+}
+
+.search-result-file-title .tree-item-inner,
+.search-result-file-title .search-result-file-title-content {
+  color: inherit;
+}
+
+.search-result-file-matches {
+  margin: 0 6px 12px;
+}
+
+.search-result-file-match {
+  border: 1px solid var(--tana-border-subtle);
+  border-top-width: 0;
+  background: rgba(var(--tana-surface-rgb), 0.38);
+}
+
+.search-result-file-match:first-child {
+  border-top-width: 1px;
+  border-top-left-radius: var(--tana-radius-sm);
+  border-top-right-radius: var(--tana-radius-sm);
+}
+
+.search-result-file-match:last-child {
+  border-bottom-left-radius: var(--tana-radius-sm);
+  border-bottom-right-radius: var(--tana-radius-sm);
+}
+
+.theme-dark .search-result-file-title {
+  border-color: rgba(159, 201, 143, 0.14);
+  background: rgba(159, 201, 143, 0.1);
+}
+
+.theme-light .search-result-file-title {
+  border-color: rgba(0, 108, 224, 0.1);
+  background: rgba(0, 108, 224, 0.075);
+}
+
+.theme-light .search-result-file-match {
+  background: #ffffff;
+}
+
+.search-result-file-title[data-path*='Mechanisms/'],
+.search-result-file-title[aria-label*='Mechanisms/'],
+.search-result-file-title[title*='Mechanisms/'],
+.search-result-file-title[data-path*='mechanism'],
+.search-result-file-title[aria-label*='mechanism'],
+.search-result-file-title[title*='mechanism'] {
+  --search-type-rgb: 159, 201, 143;
+  --search-type-color: #9fc98f;
+}
+
+.search-result-file-title[data-path*='Sources/'],
+.search-result-file-title[aria-label*='Sources/'],
+.search-result-file-title[title*='Sources/'],
+.search-result-file-title[data-path*='source'],
+.search-result-file-title[aria-label*='source'],
+.search-result-file-title[title*='source'] {
+  --search-type-rgb: 134, 213, 207;
+  --search-type-color: #86d5cf;
+}
+
+.search-result-file-title[data-path*='Theses/'],
+.search-result-file-title[aria-label*='Theses/'],
+.search-result-file-title[title*='Theses/'],
+.search-result-file-title[data-path*='thesis'],
+.search-result-file-title[aria-label*='thesis'],
+.search-result-file-title[title*='thesis'] {
+  --search-type-rgb: 184, 167, 245;
+  --search-type-color: #b8a7f5;
+}
+
+.search-result-file-title[data-path*='Logs/'],
+.search-result-file-title[aria-label*='Logs/'],
+.search-result-file-title[title*='Logs/'],
+.search-result-file-title[data-path*='log'],
+.search-result-file-title[aria-label*='log'],
+.search-result-file-title[title*='log'] {
+  --search-type-rgb: 215, 201, 124;
+  --search-type-color: #d7c97c;
+}
+
+.search-result-file-title[data-path*='Drafts/'],
+.search-result-file-title[aria-label*='Drafts/'],
+.search-result-file-title[title*='Drafts/'],
+.search-result-file-title[data-path*='Inbox/'],
+.search-result-file-title[aria-label*='Inbox/'],
+.search-result-file-title[title*='Inbox/'],
+.search-result-file-title[data-path*='draft'],
+.search-result-file-title[aria-label*='draft'],
+.search-result-file-title[title*='draft'] {
+  --search-type-rgb: 231, 173, 114;
+  --search-type-color: #e7ad72;
+}
+
+.search-result-file-title[data-path*='LifeOS/'],
+.search-result-file-title[aria-label*='LifeOS/'],
+.search-result-file-title[title*='LifeOS/'],
+.search-result-file-title[data-path*='lifeos'],
+.search-result-file-title[aria-label*='lifeos'],
+.search-result-file-title[title*='lifeos'] {
+  --search-type-rgb: 252, 165, 165;
+  --search-type-color: #fca5a5;
+}
+
+.search-result-file-title[data-path],
+.search-result-file-title[aria-label],
+.search-result-file-title[title] {
+  border-color: rgba(var(--search-type-rgb, var(--tana-accent-rgb)), 0.16);
+  background: rgba(var(--search-type-rgb, var(--tana-accent-rgb)), 0.09);
+}
+
+.search-result-file-title[data-path]::before,
+.search-result-file-title[aria-label]::before,
+.search-result-file-title[title]::before {
+  background: var(--search-type-color, var(--tana-accent));
+}
+
+.theme-light .search-result-file-title[data-path],
+.theme-light .search-result-file-title[aria-label],
+.theme-light .search-result-file-title[title] {
+  border-color: rgba(var(--search-type-rgb, 0, 108, 224), 0.14);
+  background: rgba(var(--search-type-rgb, 0, 108, 224), 0.075);
+}
+
 .tree-item-self:hover,
 .search-result-file-title:hover {
   background: var(--background-modifier-hover);
+}
+
+.search-result-file-title:hover {
+  border-color: rgba(var(--search-type-rgb, var(--tana-accent-rgb)), 0.22);
+  background: rgba(var(--search-type-rgb, var(--tana-accent-rgb)), 0.13);
+}
+
+.theme-light .search-result-file-title:hover {
+  border-color: rgba(var(--search-type-rgb, 0, 108, 224), 0.18);
+  background: rgba(var(--search-type-rgb, 0, 108, 224), 0.1);
 }
 
 .search-result-file-matches,
@@ -763,6 +916,10 @@ input[type='checkbox'],
 
 .search-result-file-match:hover {
   background: rgba(var(--tana-accent-rgb), 0.08);
+}
+
+.theme-light .search-result-file-match:hover {
+  background: rgba(0, 108, 224, 0.04);
 }
 
 .metadata-container,
