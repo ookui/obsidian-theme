@@ -841,6 +841,54 @@ input[type='checkbox'],
   background: #ffffff;
 }
 
+.search-result-file:nth-child(6n + 1) .search-result-file-title,
+.search-result-container .search-result-file:nth-child(6n + 1) .search-result-file-title,
+.search-results-children .search-result-file:nth-child(6n + 1) .search-result-file-title,
+.search-results-children .tree-item:nth-child(6n + 1) .search-result-file-title {
+  --search-type-rgb: var(--search-mechanism-rgb);
+  --search-type-color: var(--search-mechanism-color);
+}
+
+.search-result-file:nth-child(6n + 2) .search-result-file-title,
+.search-result-container .search-result-file:nth-child(6n + 2) .search-result-file-title,
+.search-results-children .search-result-file:nth-child(6n + 2) .search-result-file-title,
+.search-results-children .tree-item:nth-child(6n + 2) .search-result-file-title {
+  --search-type-rgb: var(--search-source-rgb);
+  --search-type-color: var(--search-source-color);
+}
+
+.search-result-file:nth-child(6n + 3) .search-result-file-title,
+.search-result-container .search-result-file:nth-child(6n + 3) .search-result-file-title,
+.search-results-children .search-result-file:nth-child(6n + 3) .search-result-file-title,
+.search-results-children .tree-item:nth-child(6n + 3) .search-result-file-title {
+  --search-type-rgb: var(--search-thesis-rgb);
+  --search-type-color: var(--search-thesis-color);
+}
+
+.search-result-file:nth-child(6n + 4) .search-result-file-title,
+.search-result-container .search-result-file:nth-child(6n + 4) .search-result-file-title,
+.search-results-children .search-result-file:nth-child(6n + 4) .search-result-file-title,
+.search-results-children .tree-item:nth-child(6n + 4) .search-result-file-title {
+  --search-type-rgb: var(--search-log-rgb);
+  --search-type-color: var(--search-log-color);
+}
+
+.search-result-file:nth-child(6n + 5) .search-result-file-title,
+.search-result-container .search-result-file:nth-child(6n + 5) .search-result-file-title,
+.search-results-children .search-result-file:nth-child(6n + 5) .search-result-file-title,
+.search-results-children .tree-item:nth-child(6n + 5) .search-result-file-title {
+  --search-type-rgb: var(--search-draft-rgb);
+  --search-type-color: var(--search-draft-color);
+}
+
+.search-result-file:nth-child(6n) .search-result-file-title,
+.search-result-container .search-result-file:nth-child(6n) .search-result-file-title,
+.search-results-children .search-result-file:nth-child(6n) .search-result-file-title,
+.search-results-children .tree-item:nth-child(6n) .search-result-file-title {
+  --search-type-rgb: var(--search-lifeos-rgb);
+  --search-type-color: var(--search-lifeos-color);
+}
+
 .search-result-file-title[data-path*='Mechanisms/'],
 .search-result-file-title[aria-label*='Mechanisms/'],
 .search-result-file-title[title*='Mechanisms/'],
