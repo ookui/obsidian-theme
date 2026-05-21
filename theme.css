@@ -128,6 +128,18 @@ body {
   --tag-orange-color: #e7ad72;
   --tag-neutral-rgb: 180, 188, 198;
   --tag-neutral-color: #b4bcc6;
+  --meta-chip-blue-rgb: 118, 176, 255;
+  --meta-chip-blue-color: #76b0ff;
+  --meta-chip-olive-rgb: 190, 210, 128;
+  --meta-chip-olive-color: #bed280;
+  --meta-chip-purple-rgb: 184, 167, 245;
+  --meta-chip-purple-color: #b8a7f5;
+  --meta-chip-teal-rgb: 110, 217, 180;
+  --meta-chip-teal-color: #6ed9b4;
+  --meta-chip-pink-rgb: 245, 120, 180;
+  --meta-chip-pink-color: #f578b4;
+  --meta-chip-orange-rgb: 231, 173, 114;
+  --meta-chip-orange-color: #e7ad72;
   --tana-yellow: #d7c97c;
   --tana-red: #fca5a5;
   --tana-orange: #e7ad72;
@@ -239,6 +251,18 @@ body {
   --tag-orange-color: #b75f12;
   --tag-neutral-rgb: 120, 126, 132;
   --tag-neutral-color: #555b61;
+  --meta-chip-blue-rgb: 0, 108, 224;
+  --meta-chip-blue-color: #006ce0;
+  --meta-chip-olive-rgb: 145, 170, 38;
+  --meta-chip-olive-color: #63780c;
+  --meta-chip-purple-rgb: 139, 92, 246;
+  --meta-chip-purple-color: #7c3fed;
+  --meta-chip-teal-rgb: 20, 170, 128;
+  --meta-chip-teal-color: #008f6c;
+  --meta-chip-pink-rgb: 235, 35, 132;
+  --meta-chip-pink-color: #d91a78;
+  --meta-chip-orange-rgb: 231, 126, 34;
+  --meta-chip-orange-color: #b75f12;
   --tana-yellow: #a6bd2d;
   --tana-red: #ff2f8b;
   --tana-orange: #f2994a;
@@ -1302,19 +1326,102 @@ input[type='checkbox'],
 .metadata-property-value .multi-select-pill,
 .metadata-property-value .metadata-link,
 .metadata-property-value a {
+  --meta-chip-rgb: var(--tana-tag-rgb);
+  --meta-chip-color: var(--tana-tag);
   border-radius: 5px;
-  border-color: rgba(var(--tana-tag-rgb), 0.12);
-  background: rgba(var(--tana-tag-rgb), 0.12);
-  color: var(--tana-tag);
+  border-color: rgba(var(--meta-chip-rgb), 0.14);
+  background: rgba(var(--meta-chip-rgb), 0.12);
+  color: var(--meta-chip-color);
   font-weight: 650;
 }
 
 .metadata-property-value .multi-select-pill:hover,
 .metadata-property-value .metadata-link:hover,
 .metadata-property-value a:hover {
-  border-color: rgba(var(--tana-tag-rgb), 0.26);
-  background: rgba(var(--tana-tag-rgb), 0.18);
-  color: var(--tana-tag);
+  border-color: rgba(var(--meta-chip-rgb), 0.3);
+  background: rgba(var(--meta-chip-rgb), 0.18);
+  color: var(--meta-chip-color);
+}
+
+.metadata-property-value .multi-select-pill *,
+.metadata-property-value .metadata-link *,
+.metadata-property-value a * {
+  color: inherit;
+}
+
+.metadata-property-value .multi-select-pill-remove-button,
+.metadata-property-value .metadata-link .clickable-icon,
+.metadata-property-value a .clickable-icon {
+  color: inherit;
+  opacity: 0.72;
+}
+
+.metadata-property-value .multi-select-pill:nth-child(6n + 1),
+.metadata-property-value .multi-select-pill:nth-of-type(6n + 1),
+.metadata-property-value .metadata-link:nth-child(6n + 1),
+.metadata-property-value .metadata-link:nth-of-type(6n + 1),
+.metadata-property-value a:nth-child(6n + 1) {
+  --meta-chip-rgb: var(--meta-chip-blue-rgb);
+  --meta-chip-color: var(--meta-chip-blue-color);
+}
+
+.metadata-property-value .multi-select-pill:nth-child(6n + 2),
+.metadata-property-value .multi-select-pill:nth-of-type(6n + 2),
+.metadata-property-value .metadata-link:nth-child(6n + 2),
+.metadata-property-value .metadata-link:nth-of-type(6n + 2),
+.metadata-property-value a:nth-child(6n + 2) {
+  --meta-chip-rgb: var(--meta-chip-olive-rgb);
+  --meta-chip-color: var(--meta-chip-olive-color);
+}
+
+.metadata-property-value .multi-select-pill:nth-child(6n + 3),
+.metadata-property-value .multi-select-pill:nth-of-type(6n + 3),
+.metadata-property-value .metadata-link:nth-child(6n + 3),
+.metadata-property-value .metadata-link:nth-of-type(6n + 3),
+.metadata-property-value a:nth-child(6n + 3) {
+  --meta-chip-rgb: var(--meta-chip-purple-rgb);
+  --meta-chip-color: var(--meta-chip-purple-color);
+}
+
+.metadata-property-value .multi-select-pill:nth-child(6n + 4),
+.metadata-property-value .multi-select-pill:nth-of-type(6n + 4),
+.metadata-property-value .metadata-link:nth-child(6n + 4),
+.metadata-property-value .metadata-link:nth-of-type(6n + 4),
+.metadata-property-value a:nth-child(6n + 4) {
+  --meta-chip-rgb: var(--meta-chip-teal-rgb);
+  --meta-chip-color: var(--meta-chip-teal-color);
+}
+
+.metadata-property-value .multi-select-pill:nth-child(6n + 5),
+.metadata-property-value .multi-select-pill:nth-of-type(6n + 5),
+.metadata-property-value .metadata-link:nth-child(6n + 5),
+.metadata-property-value .metadata-link:nth-of-type(6n + 5),
+.metadata-property-value a:nth-child(6n + 5) {
+  --meta-chip-rgb: var(--meta-chip-pink-rgb);
+  --meta-chip-color: var(--meta-chip-pink-color);
+}
+
+.metadata-property-value .multi-select-pill:nth-child(6n),
+.metadata-property-value .multi-select-pill:nth-of-type(6n),
+.metadata-property-value .metadata-link:nth-child(6n),
+.metadata-property-value .metadata-link:nth-of-type(6n),
+.metadata-property-value a:nth-child(6n) {
+  --meta-chip-rgb: var(--meta-chip-orange-rgb);
+  --meta-chip-color: var(--meta-chip-orange-color);
+}
+
+.theme-dark .metadata-property-value .multi-select-pill,
+.theme-dark .metadata-property-value .metadata-link,
+.theme-dark .metadata-property-value a {
+  border-color: rgba(var(--meta-chip-rgb), 0.16);
+  background: rgba(var(--meta-chip-rgb), 0.17);
+}
+
+.theme-light .metadata-property-value .multi-select-pill,
+.theme-light .metadata-property-value .metadata-link,
+.theme-light .metadata-property-value a {
+  border-color: rgba(var(--meta-chip-rgb), 0.1);
+  background: rgba(var(--meta-chip-rgb), 0.12);
 }
 
 .theme-dark .metadata-container {
