@@ -100,8 +100,8 @@ body {
   --tana-tag-rgb: 159, 201, 143;
   --tana-property: #9fc98f;
   --tana-property-rgb: 159, 201, 143;
-  --search-default-rgb: 159, 201, 143;
-  --search-default-color: #9fc98f;
+  --search-default-rgb: 135, 179, 122;
+  --search-default-color: #87b37a;
   --search-mechanism-rgb: 159, 201, 143;
   --search-mechanism-color: #9fc98f;
   --search-source-rgb: 134, 213, 207;
@@ -211,8 +211,8 @@ body {
   --tana-tag-rgb: 0, 108, 224;
   --tana-property: #006ce0;
   --tana-property-rgb: 0, 108, 224;
-  --search-default-rgb: 0, 108, 224;
-  --search-default-color: #006ce0;
+  --search-default-rgb: 74, 144, 226;
+  --search-default-color: #2f7ed8;
   --search-mechanism-rgb: 0, 108, 224;
   --search-mechanism-color: #006ce0;
   --search-source-rgb: 0, 153, 170;
@@ -1194,19 +1194,52 @@ input[type='checkbox'],
   --search-type-color: var(--search-default-color);
 }
 
+.theme-dark .workspace .search-result-file .search-result-file-title,
+.theme-dark .workspace .search-results-children .tree-item .search-result-file-title,
+.theme-dark .workspace .search-result-file-title {
+  --search-type-rgb: var(--search-default-rgb);
+  --search-type-color: var(--search-default-color);
+  border-color: rgba(var(--search-default-rgb), 0.14);
+  background: rgba(var(--search-default-rgb), 0.1);
+}
+
+.theme-light .workspace .search-result-file .search-result-file-title,
+.theme-light .workspace .search-results-children .tree-item .search-result-file-title,
+.theme-light .workspace .search-result-file-title {
+  --search-type-rgb: var(--search-default-rgb);
+  --search-type-color: var(--search-default-color);
+  border-color: rgba(var(--search-default-rgb), 0.16);
+  background: rgba(var(--search-default-rgb), 0.1);
+}
+
+.theme-dark .workspace .search-result-file .search-result-file-title::before,
+.theme-dark .workspace .search-results-children .tree-item .search-result-file-title::before,
+.theme-dark .workspace .search-result-file-title::before,
+.theme-light .workspace .search-result-file .search-result-file-title::before,
+.theme-light .workspace .search-results-children .tree-item .search-result-file-title::before,
+.theme-light .workspace .search-result-file-title::before {
+  background: var(--search-default-color);
+}
+
 .tree-item-self:hover,
 .search-result-file-title:hover {
   background: var(--background-modifier-hover);
 }
 
-.search-result-file-title:hover {
-  border-color: rgba(var(--search-type-rgb), 0.22);
-  background: rgba(var(--search-type-rgb), 0.13);
+.theme-dark .workspace .search-result-file-title:hover,
+.theme-dark .workspace .search-result-file-title.is-active,
+.theme-dark .workspace .search-result-file.mod-active .search-result-file-title,
+.theme-dark .workspace .search-result-file-title.mod-active {
+  border-color: rgba(var(--search-default-rgb), 0.22);
+  background: rgba(var(--search-default-rgb), 0.13);
 }
 
-.theme-light .search-result-file-title:hover {
-  border-color: rgba(var(--search-type-rgb), 0.18);
-  background: rgba(var(--search-type-rgb), 0.1);
+.theme-light .workspace .search-result-file-title:hover,
+.theme-light .workspace .search-result-file-title.is-active,
+.theme-light .workspace .search-result-file.mod-active .search-result-file-title,
+.theme-light .workspace .search-result-file-title.mod-active {
+  border-color: rgba(var(--search-default-rgb), 0.18);
+  background: rgba(var(--search-default-rgb), 0.1);
 }
 
 .search-result-file-matches,
