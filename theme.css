@@ -1706,6 +1706,39 @@ input[type='checkbox'],
   background: #f1f6fd;
 }
 
+.theme-light .workspace .search-result-file.is-selected .search-result-file-title,
+.theme-light .workspace .search-result-file.mod-selected .search-result-file-title,
+.theme-light .workspace .search-result-file.mod-active .search-result-file-title,
+.theme-light .workspace .search-result-file-title.is-selected,
+.theme-light .workspace .search-result-file-title.is-active,
+.theme-light .workspace .search-result-file-title.mod-active,
+.theme-light .workspace .search-result-file-title[aria-selected='true'] {
+  border-color: rgba(var(--search-default-rgb), 0.18);
+  background: #4a90e2;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.theme-light .workspace .search-result-file.is-selected .search-result-file-title::before,
+.theme-light .workspace .search-result-file.mod-selected .search-result-file-title::before,
+.theme-light .workspace .search-result-file.mod-active .search-result-file-title::before,
+.theme-light .workspace .search-result-file-title.is-selected::before,
+.theme-light .workspace .search-result-file-title.is-active::before,
+.theme-light .workspace .search-result-file-title.mod-active::before,
+.theme-light .workspace .search-result-file-title[aria-selected='true']::before {
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.theme-light .workspace .search-result-file.is-selected .search-result-file-title .tree-item-flair,
+.theme-light .workspace .search-result-file.mod-selected .search-result-file-title .tree-item-flair,
+.theme-light .workspace .search-result-file.mod-active .search-result-file-title .tree-item-flair,
+.theme-light .workspace .search-result-file-title.is-selected .tree-item-flair,
+.theme-light .workspace .search-result-file-title.is-active .tree-item-flair,
+.theme-light .workspace .search-result-file-title.mod-active .tree-item-flair,
+.theme-light .workspace .search-result-file-title[aria-selected='true'] .tree-item-flair {
+  color: rgba(255, 255, 255, 0.78);
+}
+
 .search-result-file-matches,
 .search-result-file-match {
   color: var(--tana-muted);
@@ -2092,6 +2125,17 @@ input[type='checkbox'],
 .vertical-tab-nav-item:hover {
   background: rgba(var(--tana-accent-rgb), 0.12);
   color: var(--tana-text-strong);
+}
+
+.theme-light .suggestion-item.is-selected {
+  background: #4a90e2;
+  color: #ffffff;
+}
+
+.theme-light .suggestion-item.is-selected .suggestion-note,
+.theme-light .suggestion-item.is-selected .suggestion-hotkey,
+.theme-light .suggestion-item.is-selected .suggestion-flair {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 input[type='text'],
