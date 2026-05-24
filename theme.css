@@ -1327,6 +1327,20 @@ input[type='checkbox'],
   border-radius: var(--tana-radius-sm);
 }
 
+.theme-light .workspace-leaf-content[data-type='search'] .view-content {
+  background: #f3f4f6;
+}
+
+.theme-light .workspace-leaf-content[data-type='search'] .search-result-container,
+.theme-light .workspace-leaf-content[data-type='search'] .search-results-children {
+  background: #f3f4f6;
+}
+
+.theme-light .workspace-leaf-content[data-type='search'] .search-info-container,
+.theme-light .workspace-leaf-content[data-type='search'] .search-result-sort-button {
+  color: #5e646b;
+}
+
 .search-result-file-title {
   --search-type-rgb: var(--search-default-rgb);
   --search-type-color: var(--search-default-color);
@@ -1381,12 +1395,13 @@ input[type='checkbox'],
 }
 
 .theme-light .search-result-file-title {
-  border-color: rgba(36, 39, 43, 0.08);
-  background: #f8fafc;
+  border-color: #d9dee6;
+  background: #ffffff;
 }
 
 .theme-light .search-result-file-match {
   background: #ffffff;
+  border-color: #d9dee6;
 }
 
 .search-result-file:nth-child(6n + 1) .search-result-file-title,
@@ -1671,9 +1686,9 @@ input[type='checkbox'],
 .theme-light .workspace .search-result-file-title {
   --search-type-rgb: var(--search-default-rgb);
   --search-type-color: var(--search-default-color);
-  border-color: rgba(36, 39, 43, 0.08);
-  background: #f8fafc;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.72);
+  border-color: #d9dee6;
+  background: #ffffff;
+  box-shadow: none;
 }
 
 .theme-dark .workspace .search-result-file .search-result-file-title::before,
@@ -1703,7 +1718,7 @@ input[type='checkbox'],
 .theme-light .workspace .search-result-file.mod-active .search-result-file-title,
 .theme-light .workspace .search-result-file-title.mod-active {
   border-color: rgba(var(--search-default-rgb), 0.18);
-  background: #f1f6fd;
+  background: #eef5ff;
 }
 
 .theme-light .workspace .search-result-file.is-selected .search-result-file-title,
@@ -1749,7 +1764,16 @@ input[type='checkbox'],
 }
 
 .theme-light .search-result-file-match:hover {
-  background: rgba(0, 108, 224, 0.04);
+  background: #f7fbff;
+}
+
+.theme-light .workspace-leaf-content[data-type='search'] .search-result-file-match {
+  background: #ffffff;
+  border-color: #d9dee6;
+}
+
+.theme-light .workspace-leaf-content[data-type='search'] .search-result-file-match:hover {
+  background: #f7fbff;
 }
 
 .metadata-container,
