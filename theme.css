@@ -1724,6 +1724,15 @@ input[type='checkbox'],
 .theme-light .workspace .search-result-file.is-selected .search-result-file-title,
 .theme-light .workspace .search-result-file.mod-selected .search-result-file-title,
 .theme-light .workspace .search-result-file.mod-active .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-active,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-selected,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-active,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-selected,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-active > .tree-item-self,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-selected > .tree-item-self,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-active > .tree-item-self,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-selected > .tree-item-self,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self[aria-selected='true'],
 .theme-light .workspace .search-result-file-title.is-selected,
 .theme-light .workspace .search-result-file-title.is-active,
 .theme-light .workspace .search-result-file-title.mod-active,
@@ -1737,11 +1746,47 @@ input[type='checkbox'],
 .theme-light .workspace .search-result-file.is-selected .search-result-file-title::before,
 .theme-light .workspace .search-result-file.mod-selected .search-result-file-title::before,
 .theme-light .workspace .search-result-file.mod-active .search-result-file-title::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-active::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-selected::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-active::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-selected::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-active > .tree-item-self::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-selected > .tree-item-self::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-active > .tree-item-self::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-selected > .tree-item-self::before,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self[aria-selected='true']::before,
 .theme-light .workspace .search-result-file-title.is-selected::before,
 .theme-light .workspace .search-result-file-title.is-active::before,
 .theme-light .workspace .search-result-file-title.mod-active::before,
 .theme-light .workspace .search-result-file-title[aria-selected='true']::before {
   background: rgba(255, 255, 255, 0.86);
+}
+
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-active *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-selected *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-active *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-selected *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-active > .tree-item-self *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-selected > .tree-item-self *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-active > .tree-item-self *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-selected > .tree-item-self *,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self[aria-selected='true'] * {
+  color: inherit;
+}
+
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-active .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.is-selected .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-active .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self.mod-selected .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-active > .tree-item-self .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.is-selected > .tree-item-self .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-active > .tree-item-self .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item.mod-selected > .tree-item-self .search-result-file-title,
+.theme-light .workspace-leaf-content[data-type='search'] .tree-item-self[aria-selected='true'] .search-result-file-title {
+  border-color: transparent;
+  background: transparent;
+  color: inherit;
+  box-shadow: none;
 }
 
 .theme-light .workspace .search-result-file.is-selected .search-result-file-title .tree-item-flair,
