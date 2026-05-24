@@ -72,6 +72,10 @@ body {
   --h6-color: var(--tana-muted);
   --h1-weight: 650;
   --h2-weight: 620;
+
+  --lake-section-rgb: var(--tana-accent-rgb);
+  --lake-section-color: var(--tana-accent);
+  --lake-section-banner: var(--tana-page-glow);
 }
 
 .theme-dark {
@@ -140,6 +144,22 @@ body {
   --meta-chip-pink-color: #f578b4;
   --meta-chip-orange-rgb: 231, 173, 114;
   --meta-chip-orange-color: #e7ad72;
+  --lake-source-rgb: 118, 176, 255;
+  --lake-source-color: #76b0ff;
+  --lake-log-rgb: 231, 173, 114;
+  --lake-log-color: #e7ad72;
+  --lake-mechanism-rgb: 159, 201, 143;
+  --lake-mechanism-color: #9fc98f;
+  --lake-thesis-rgb: 184, 167, 245;
+  --lake-thesis-color: #b8a7f5;
+  --lake-venture-rgb: 245, 120, 180;
+  --lake-venture-color: #f578b4;
+  --lake-life-rgb: 110, 217, 180;
+  --lake-life-color: #6ed9b4;
+  --lake-inbox-rgb: 215, 201, 124;
+  --lake-inbox-color: #d7c97c;
+  --lake-meta-rgb: 180, 188, 198;
+  --lake-meta-color: #b4bcc6;
   --tana-yellow: #d7c97c;
   --tana-red: #fca5a5;
   --tana-orange: #e7ad72;
@@ -263,6 +283,22 @@ body {
   --meta-chip-pink-color: #d91a78;
   --meta-chip-orange-rgb: 231, 126, 34;
   --meta-chip-orange-color: #b75f12;
+  --lake-source-rgb: 0, 108, 224;
+  --lake-source-color: #006ce0;
+  --lake-log-rgb: 231, 126, 34;
+  --lake-log-color: #b75f12;
+  --lake-mechanism-rgb: 145, 170, 38;
+  --lake-mechanism-color: #63780c;
+  --lake-thesis-rgb: 139, 92, 246;
+  --lake-thesis-color: #7c3fed;
+  --lake-venture-rgb: 235, 35, 132;
+  --lake-venture-color: #d91a78;
+  --lake-life-rgb: 20, 170, 128;
+  --lake-life-color: #008f6c;
+  --lake-inbox-rgb: 162, 124, 24;
+  --lake-inbox-color: #8f6e14;
+  --lake-meta-rgb: 120, 126, 132;
+  --lake-meta-color: #555b61;
   --tana-yellow: #a6bd2d;
   --tana-red: #ff2f8b;
   --tana-orange: #f2994a;
@@ -479,6 +515,112 @@ body,
   background: #ffffff;
 }
 
+.workspace-leaf-content[data-type='markdown'],
+.markdown-preview-view,
+.markdown-source-view {
+  --lake-section-rgb: var(--lake-source-rgb);
+  --lake-section-color: var(--lake-source-color);
+  --lake-section-banner: radial-gradient(ellipse at 55% 0%, rgba(var(--lake-section-rgb), 0.16), rgba(255, 255, 255, 0) 34rem);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
+  --tana-tag: var(--lake-section-color);
+  --tana-tag-rgb: var(--lake-section-rgb);
+  --meta-chip-color: var(--lake-section-color);
+  --meta-chip-rgb: var(--lake-section-rgb);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='Sources/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/Sources/'],
+.markdown-preview-view[data-path^='Sources/'],
+.markdown-preview-view[data-path*='/Sources/'],
+.markdown-source-view[data-path^='Sources/'],
+.markdown-source-view[data-path*='/Sources/'] {
+  --lake-section-rgb: var(--lake-source-rgb);
+  --lake-section-color: var(--lake-source-color);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='Logs/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/Logs/'],
+.markdown-preview-view[data-path^='Logs/'],
+.markdown-preview-view[data-path*='/Logs/'],
+.markdown-source-view[data-path^='Logs/'],
+.markdown-source-view[data-path*='/Logs/'] {
+  --lake-section-rgb: var(--lake-log-rgb);
+  --lake-section-color: var(--lake-log-color);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='Mechanisms/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/Mechanisms/'],
+.markdown-preview-view[data-path^='Mechanisms/'],
+.markdown-preview-view[data-path*='/Mechanisms/'],
+.markdown-source-view[data-path^='Mechanisms/'],
+.markdown-source-view[data-path*='/Mechanisms/'] {
+  --lake-section-rgb: var(--lake-mechanism-rgb);
+  --lake-section-color: var(--lake-mechanism-color);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='Theses/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/Theses/'],
+.markdown-preview-view[data-path^='Theses/'],
+.markdown-preview-view[data-path*='/Theses/'],
+.markdown-source-view[data-path^='Theses/'],
+.markdown-source-view[data-path*='/Theses/'] {
+  --lake-section-rgb: var(--lake-thesis-rgb);
+  --lake-section-color: var(--lake-thesis-color);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='Ventures/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/Ventures/'],
+.markdown-preview-view[data-path^='Ventures/'],
+.markdown-preview-view[data-path*='/Ventures/'],
+.markdown-source-view[data-path^='Ventures/'],
+.markdown-source-view[data-path*='/Ventures/'] {
+  --lake-section-rgb: var(--lake-venture-rgb);
+  --lake-section-color: var(--lake-venture-color);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='LifeOS/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/LifeOS/'],
+.markdown-preview-view[data-path^='LifeOS/'],
+.markdown-preview-view[data-path*='/LifeOS/'],
+.markdown-source-view[data-path^='LifeOS/'],
+.markdown-source-view[data-path*='/LifeOS/'] {
+  --lake-section-rgb: var(--lake-life-rgb);
+  --lake-section-color: var(--lake-life-color);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='Inbox/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/Inbox/'],
+.markdown-preview-view[data-path^='Inbox/'],
+.markdown-preview-view[data-path*='/Inbox/'],
+.markdown-source-view[data-path^='Inbox/'],
+.markdown-source-view[data-path*='/Inbox/'] {
+  --lake-section-rgb: var(--lake-inbox-rgb);
+  --lake-section-color: var(--lake-inbox-color);
+}
+
+.workspace-leaf-content[data-type='markdown'][data-path^='_Meta/'],
+.workspace-leaf-content[data-type='markdown'][data-path*='/_Meta/'],
+.markdown-preview-view[data-path^='_Meta/'],
+.markdown-preview-view[data-path*='/_Meta/'],
+.markdown-source-view[data-path^='_Meta/'],
+.markdown-source-view[data-path*='/_Meta/'] {
+  --lake-section-rgb: var(--lake-meta-rgb);
+  --lake-section-color: var(--lake-meta-color);
+}
+
+.theme-dark .workspace-leaf-content[data-type='markdown'],
+.theme-dark .markdown-preview-view,
+.theme-dark .markdown-source-view {
+  --lake-section-banner: radial-gradient(circle at top left, rgba(var(--lake-section-rgb), 0.1), transparent 34rem), linear-gradient(180deg, #111315, #17191c);
+}
+
+.theme-light .workspace-leaf-content[data-type='markdown'],
+.theme-light .markdown-preview-view,
+.theme-light .markdown-source-view {
+  --lake-section-banner: radial-gradient(ellipse at 55% 0%, rgba(var(--lake-section-rgb), 0.16), rgba(255, 255, 255, 0) 34rem);
+}
+
 .view-header-title,
 .inline-title {
   color: var(--tana-title);
@@ -494,12 +636,12 @@ body,
 
 .theme-dark .inline-title,
 .theme-dark .view-header-title {
-  text-shadow: 0 0 24px rgba(135, 179, 122, 0.12);
+  text-shadow: 0 0 24px rgba(var(--lake-section-rgb), 0.16);
 }
 
 .theme-light .inline-title,
 .theme-light .view-header-title {
-  text-shadow: 0 12px 36px rgba(0, 108, 224, 0.1);
+  text-shadow: 0 12px 36px rgba(var(--lake-section-rgb), 0.12);
 }
 
 .theme-light .markdown-reading-view .markdown-preview-view::before {
@@ -509,7 +651,7 @@ body,
   margin: 0 auto -70px;
   max-width: min(920px, 92%);
   border-radius: 0 0 18px 18px;
-  background: var(--tana-page-glow);
+  background: var(--lake-section-banner);
   pointer-events: none;
 }
 
@@ -969,6 +1111,93 @@ input[type='checkbox'],
 .theme-light .tree-item-self.is-active {
   background: rgba(0, 108, 224, 0.1);
   color: #202327;
+}
+
+.nav-folder-title[data-path='Sources'],
+.nav-folder-title[data-path='Sources/'] {
+  --lake-folder-rgb: var(--lake-source-rgb);
+  --lake-folder-color: var(--lake-source-color);
+}
+
+.nav-folder-title[data-path='Logs'],
+.nav-folder-title[data-path='Logs/'] {
+  --lake-folder-rgb: var(--lake-log-rgb);
+  --lake-folder-color: var(--lake-log-color);
+}
+
+.nav-folder-title[data-path='Mechanisms'],
+.nav-folder-title[data-path='Mechanisms/'] {
+  --lake-folder-rgb: var(--lake-mechanism-rgb);
+  --lake-folder-color: var(--lake-mechanism-color);
+}
+
+.nav-folder-title[data-path='Theses'],
+.nav-folder-title[data-path='Theses/'] {
+  --lake-folder-rgb: var(--lake-thesis-rgb);
+  --lake-folder-color: var(--lake-thesis-color);
+}
+
+.nav-folder-title[data-path='Ventures'],
+.nav-folder-title[data-path='Ventures/'] {
+  --lake-folder-rgb: var(--lake-venture-rgb);
+  --lake-folder-color: var(--lake-venture-color);
+}
+
+.nav-folder-title[data-path='LifeOS'],
+.nav-folder-title[data-path='LifeOS/'] {
+  --lake-folder-rgb: var(--lake-life-rgb);
+  --lake-folder-color: var(--lake-life-color);
+}
+
+.nav-folder-title[data-path='Inbox'],
+.nav-folder-title[data-path='Inbox/'] {
+  --lake-folder-rgb: var(--lake-inbox-rgb);
+  --lake-folder-color: var(--lake-inbox-color);
+}
+
+.nav-folder-title[data-path='_Meta'],
+.nav-folder-title[data-path='_Meta/'] {
+  --lake-folder-rgb: var(--lake-meta-rgb);
+  --lake-folder-color: var(--lake-meta-color);
+}
+
+.nav-folder-title[data-path='Sources'],
+.nav-folder-title[data-path='Sources/'],
+.nav-folder-title[data-path='Logs'],
+.nav-folder-title[data-path='Logs/'],
+.nav-folder-title[data-path='Mechanisms'],
+.nav-folder-title[data-path='Mechanisms/'],
+.nav-folder-title[data-path='Theses'],
+.nav-folder-title[data-path='Theses/'],
+.nav-folder-title[data-path='Ventures'],
+.nav-folder-title[data-path='Ventures/'],
+.nav-folder-title[data-path='LifeOS'],
+.nav-folder-title[data-path='LifeOS/'],
+.nav-folder-title[data-path='Inbox'],
+.nav-folder-title[data-path='Inbox/'],
+.nav-folder-title[data-path='_Meta'],
+.nav-folder-title[data-path='_Meta/'] {
+  color: var(--lake-folder-color);
+}
+
+.theme-light .nav-folder-title[data-path='Sources'].is-active,
+.theme-light .nav-folder-title[data-path='Sources/'].is-active,
+.theme-light .nav-folder-title[data-path='Logs'].is-active,
+.theme-light .nav-folder-title[data-path='Logs/'].is-active,
+.theme-light .nav-folder-title[data-path='Mechanisms'].is-active,
+.theme-light .nav-folder-title[data-path='Mechanisms/'].is-active,
+.theme-light .nav-folder-title[data-path='Theses'].is-active,
+.theme-light .nav-folder-title[data-path='Theses/'].is-active,
+.theme-light .nav-folder-title[data-path='Ventures'].is-active,
+.theme-light .nav-folder-title[data-path='Ventures/'].is-active,
+.theme-light .nav-folder-title[data-path='LifeOS'].is-active,
+.theme-light .nav-folder-title[data-path='LifeOS/'].is-active,
+.theme-light .nav-folder-title[data-path='Inbox'].is-active,
+.theme-light .nav-folder-title[data-path='Inbox/'].is-active,
+.theme-light .nav-folder-title[data-path='_Meta'].is-active,
+.theme-light .nav-folder-title[data-path='_Meta/'].is-active {
+  background: rgba(var(--lake-folder-rgb), 0.1);
+  color: var(--lake-folder-color);
 }
 
 .tree-item-self,
@@ -1632,6 +1861,31 @@ input[type='checkbox'],
 .metadata-property[data-property-key='attachments'] .metadata-property-value a {
   --meta-chip-rgb: var(--meta-chip-pink-rgb);
   --meta-chip-color: var(--meta-chip-pink-color);
+}
+
+.workspace-leaf-content[data-type='markdown'] .metadata-property-value,
+.workspace-leaf-content[data-type='markdown'] .metadata-input,
+.workspace-leaf-content[data-type='markdown'] .metadata-property-value input,
+.markdown-preview-view .metadata-property-value,
+.markdown-source-view .metadata-property-value {
+  --meta-chip-rgb: var(--lake-section-rgb);
+  --meta-chip-color: var(--lake-section-color);
+}
+
+.workspace-leaf-content[data-type='markdown'] .metadata-property-value .multi-select-pill,
+.workspace-leaf-content[data-type='markdown'] .metadata-property-value .metadata-link,
+.workspace-leaf-content[data-type='markdown'] .metadata-property-value a,
+.markdown-preview-view .metadata-property-value .multi-select-pill,
+.markdown-preview-view .metadata-property-value .metadata-link,
+.markdown-preview-view .metadata-property-value a,
+.markdown-source-view .metadata-property-value .multi-select-pill,
+.markdown-source-view .metadata-property-value .metadata-link,
+.markdown-source-view .metadata-property-value a {
+  --meta-chip-rgb: var(--lake-section-rgb);
+  --meta-chip-color: var(--lake-section-color);
+  border-color: rgba(var(--lake-section-rgb), 0.12);
+  background: rgba(var(--lake-section-rgb), 0.12);
+  color: var(--lake-section-color);
 }
 
 .theme-dark .metadata-property-value .multi-select-pill,
