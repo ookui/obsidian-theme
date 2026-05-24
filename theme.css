@@ -521,12 +521,6 @@ body,
   --lake-section-rgb: var(--lake-source-rgb);
   --lake-section-color: var(--lake-source-color);
   --lake-section-banner: radial-gradient(ellipse at 55% 0%, rgba(var(--lake-section-rgb), 0.16), rgba(255, 255, 255, 0) 34rem);
-  --tana-property: var(--lake-section-color);
-  --tana-property-rgb: var(--lake-section-rgb);
-  --tana-tag: var(--lake-section-color);
-  --tana-tag-rgb: var(--lake-section-rgb);
-  --meta-chip-color: var(--lake-section-color);
-  --meta-chip-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='Sources/'],
@@ -537,6 +531,8 @@ body,
 .markdown-source-view[data-path*='/Sources/'] {
   --lake-section-rgb: var(--lake-source-rgb);
   --lake-section-color: var(--lake-source-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='Logs/'],
@@ -547,6 +543,8 @@ body,
 .markdown-source-view[data-path*='/Logs/'] {
   --lake-section-rgb: var(--lake-log-rgb);
   --lake-section-color: var(--lake-log-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='Mechanisms/'],
@@ -557,6 +555,8 @@ body,
 .markdown-source-view[data-path*='/Mechanisms/'] {
   --lake-section-rgb: var(--lake-mechanism-rgb);
   --lake-section-color: var(--lake-mechanism-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='Theses/'],
@@ -567,6 +567,8 @@ body,
 .markdown-source-view[data-path*='/Theses/'] {
   --lake-section-rgb: var(--lake-thesis-rgb);
   --lake-section-color: var(--lake-thesis-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='Ventures/'],
@@ -577,6 +579,8 @@ body,
 .markdown-source-view[data-path*='/Ventures/'] {
   --lake-section-rgb: var(--lake-venture-rgb);
   --lake-section-color: var(--lake-venture-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='LifeOS/'],
@@ -587,6 +591,8 @@ body,
 .markdown-source-view[data-path*='/LifeOS/'] {
   --lake-section-rgb: var(--lake-life-rgb);
   --lake-section-color: var(--lake-life-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='Inbox/'],
@@ -597,6 +603,8 @@ body,
 .markdown-source-view[data-path*='/Inbox/'] {
   --lake-section-rgb: var(--lake-inbox-rgb);
   --lake-section-color: var(--lake-inbox-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .workspace-leaf-content[data-type='markdown'][data-path^='_Meta/'],
@@ -607,6 +615,8 @@ body,
 .markdown-source-view[data-path*='/_Meta/'] {
   --lake-section-rgb: var(--lake-meta-rgb);
   --lake-section-color: var(--lake-meta-color);
+  --tana-property: var(--lake-section-color);
+  --tana-property-rgb: var(--lake-section-rgb);
 }
 
 .theme-dark .workspace-leaf-content[data-type='markdown'],
@@ -1196,6 +1206,117 @@ input[type='checkbox'],
 .theme-light .nav-folder-title[data-path='Inbox/'].is-active,
 .theme-light .nav-folder-title[data-path='_Meta'].is-active,
 .theme-light .nav-folder-title[data-path='_Meta/'].is-active {
+  background: rgba(var(--lake-folder-rgb), 0.1);
+  color: var(--lake-folder-color);
+}
+
+.nav-folder[data-path='Sources'] > .nav-folder-title,
+.nav-folder[data-path='Sources/'] > .nav-folder-title,
+.nav-folder-title[data-path='Sources'],
+.nav-folder-title[data-path='Sources/'] {
+  --lake-folder-rgb: var(--lake-source-rgb);
+  --lake-folder-color: var(--lake-source-color);
+}
+
+.nav-folder[data-path='Logs'] > .nav-folder-title,
+.nav-folder[data-path='Logs/'] > .nav-folder-title,
+.nav-folder-title[data-path='Logs'],
+.nav-folder-title[data-path='Logs/'] {
+  --lake-folder-rgb: var(--lake-log-rgb);
+  --lake-folder-color: var(--lake-log-color);
+}
+
+.nav-folder[data-path='Mechanisms'] > .nav-folder-title,
+.nav-folder[data-path='Mechanisms/'] > .nav-folder-title,
+.nav-folder-title[data-path='Mechanisms'],
+.nav-folder-title[data-path='Mechanisms/'] {
+  --lake-folder-rgb: var(--lake-mechanism-rgb);
+  --lake-folder-color: var(--lake-mechanism-color);
+}
+
+.nav-folder[data-path='Theses'] > .nav-folder-title,
+.nav-folder[data-path='Theses/'] > .nav-folder-title,
+.nav-folder-title[data-path='Theses'],
+.nav-folder-title[data-path='Theses/'] {
+  --lake-folder-rgb: var(--lake-thesis-rgb);
+  --lake-folder-color: var(--lake-thesis-color);
+}
+
+.nav-folder[data-path='Ventures'] > .nav-folder-title,
+.nav-folder[data-path='Ventures/'] > .nav-folder-title,
+.nav-folder-title[data-path='Ventures'],
+.nav-folder-title[data-path='Ventures/'] {
+  --lake-folder-rgb: var(--lake-venture-rgb);
+  --lake-folder-color: var(--lake-venture-color);
+}
+
+.nav-folder[data-path='LifeOS'] > .nav-folder-title,
+.nav-folder[data-path='LifeOS/'] > .nav-folder-title,
+.nav-folder-title[data-path='LifeOS'],
+.nav-folder-title[data-path='LifeOS/'] {
+  --lake-folder-rgb: var(--lake-life-rgb);
+  --lake-folder-color: var(--lake-life-color);
+}
+
+.nav-folder[data-path='Inbox'] > .nav-folder-title,
+.nav-folder[data-path='Inbox/'] > .nav-folder-title,
+.nav-folder-title[data-path='Inbox'],
+.nav-folder-title[data-path='Inbox/'] {
+  --lake-folder-rgb: var(--lake-inbox-rgb);
+  --lake-folder-color: var(--lake-inbox-color);
+}
+
+.nav-folder[data-path='_Meta'] > .nav-folder-title,
+.nav-folder[data-path='_Meta/'] > .nav-folder-title,
+.nav-folder-title[data-path='_Meta'],
+.nav-folder-title[data-path='_Meta/'] {
+  --lake-folder-rgb: var(--lake-meta-rgb);
+  --lake-folder-color: var(--lake-meta-color);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Sources'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Sources/'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Logs'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Logs/'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Mechanisms'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Mechanisms/'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Theses'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Theses/'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Ventures'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Ventures/'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='LifeOS'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='LifeOS/'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Inbox'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Inbox/'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='_Meta'] > .nav-folder-title,
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='_Meta/'] > .nav-folder-title,
+.nav-folder-title[data-path='Sources'],
+.nav-folder-title[data-path='Sources/'],
+.nav-folder-title[data-path='Logs'],
+.nav-folder-title[data-path='Logs/'],
+.nav-folder-title[data-path='Mechanisms'],
+.nav-folder-title[data-path='Mechanisms/'],
+.nav-folder-title[data-path='Theses'],
+.nav-folder-title[data-path='Theses/'],
+.nav-folder-title[data-path='Ventures'],
+.nav-folder-title[data-path='Ventures/'],
+.nav-folder-title[data-path='LifeOS'],
+.nav-folder-title[data-path='LifeOS/'],
+.nav-folder-title[data-path='Inbox'],
+.nav-folder-title[data-path='Inbox/'],
+.nav-folder-title[data-path='_Meta'],
+.nav-folder-title[data-path='_Meta/'] {
+  color: var(--lake-folder-color);
+}
+
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Sources'] > .nav-folder-title.is-active,
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Logs'] > .nav-folder-title.is-active,
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Mechanisms'] > .nav-folder-title.is-active,
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Theses'] > .nav-folder-title.is-active,
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Ventures'] > .nav-folder-title.is-active,
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='LifeOS'] > .nav-folder-title.is-active,
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='Inbox'] > .nav-folder-title.is-active,
+.theme-light .workspace-leaf-content[data-type='file-explorer'] .nav-folder.mod-root > .nav-folder-children > .nav-folder[data-path='_Meta'] > .nav-folder-title.is-active {
   background: rgba(var(--lake-folder-rgb), 0.1);
   color: var(--lake-folder-color);
 }
@@ -1861,31 +1982,6 @@ input[type='checkbox'],
 .metadata-property[data-property-key='attachments'] .metadata-property-value a {
   --meta-chip-rgb: var(--meta-chip-pink-rgb);
   --meta-chip-color: var(--meta-chip-pink-color);
-}
-
-.workspace-leaf-content[data-type='markdown'] .metadata-property-value,
-.workspace-leaf-content[data-type='markdown'] .metadata-input,
-.workspace-leaf-content[data-type='markdown'] .metadata-property-value input,
-.markdown-preview-view .metadata-property-value,
-.markdown-source-view .metadata-property-value {
-  --meta-chip-rgb: var(--lake-section-rgb);
-  --meta-chip-color: var(--lake-section-color);
-}
-
-.workspace-leaf-content[data-type='markdown'] .metadata-property-value .multi-select-pill,
-.workspace-leaf-content[data-type='markdown'] .metadata-property-value .metadata-link,
-.workspace-leaf-content[data-type='markdown'] .metadata-property-value a,
-.markdown-preview-view .metadata-property-value .multi-select-pill,
-.markdown-preview-view .metadata-property-value .metadata-link,
-.markdown-preview-view .metadata-property-value a,
-.markdown-source-view .metadata-property-value .multi-select-pill,
-.markdown-source-view .metadata-property-value .metadata-link,
-.markdown-source-view .metadata-property-value a {
-  --meta-chip-rgb: var(--lake-section-rgb);
-  --meta-chip-color: var(--lake-section-color);
-  border-color: rgba(var(--lake-section-rgb), 0.12);
-  background: rgba(var(--lake-section-rgb), 0.12);
-  color: var(--lake-section-color);
 }
 
 .theme-dark .metadata-property-value .multi-select-pill,
